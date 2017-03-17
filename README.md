@@ -1,7 +1,5 @@
 # Portfolio Landing Page (Week 1 Intro Project)
 
-#### _{Brief description of application}, {Date of current version}_
-
 #### By Jonathon Kang
 
 ## Description
