@@ -7,6 +7,11 @@ body{
   width: 70%;
   margin: auto;
 }
+h2{
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
 
 /*Navbar*/
 .navbar{
@@ -21,8 +26,8 @@ body{
 #headerDiv{
   background: #88BBD6;
   margin-top: 51px;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 #introText{
   text-align: center;
@@ -41,15 +46,14 @@ body{
   margin: auto;
   margin-bottom: 2%;
   width: 90%;
-}
-#portDiv h2{
-  text-align: center;
-  margin-bottom: 20px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 .portItem{
-  border: solid 9px #676561;
+  border: solid 5px #676561;
   margin-top: 10px;
   height: 200px;
+  padding-right: 10px;
 }
 .portItem img{
   height: 80px;
@@ -63,15 +67,48 @@ body{
 /*About Me section*/
 #aboutDiv{
   background: #88BBD6;
-}
-#aboutDiv h2{
-  text-align: center;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 #aboutDiv ul{
   list-style-type: circle;
 }
 #aboutDiv li{
   margin: 3px 0;
+}
+
+/*Contact Me*/
+#contactDiv{
+  margin: auto;
+  width: 90%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+form{
+  width: 90%;
+}
+form *{
+  margin-top: 20px;
+  width: 90%;
+  height: 40px;
+  border-radius: 10px;
+}
+#msgform{
+  height: 150px;
+}
+button{
+  width: 20%;
+  font-size: 16px;
+  font-weight: bold;
+  background: #88BBD6;
+  border: none;
+}
+#contactDiv p{
+  font-size: 18px;
+}
+#contactDiv img{
+  margin-top: 40px;
+  height: 80px;
 }
 
 /*Footer*/
