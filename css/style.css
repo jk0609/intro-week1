@@ -12,6 +12,10 @@ h2{
   margin-bottom: 20px;
   font-weight: bold;
 }
+/*span class to enlarge text*/
+.enlarge{
+  font-size: 22px;
+}
 
 /*Navbar*/
 .navbar{
@@ -107,7 +111,7 @@ button{
   font-size: 18px;
 }
 #contactDiv img{
-  margin-top: 40px;
+  margin-top: 20px;
   height: 80px;
 }
 
