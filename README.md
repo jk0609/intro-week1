@@ -10,7 +10,7 @@ Final exercise in HTML/CSS. A portfolio landing page for possible future use, in
 
 There is only HTML and CSS, so clone the repository and open the index.html file in a browser of your choice. Make sure not to move any of the images or additional folders in the directory.
 
-Alternatively, visit https://jk0609.github.io/intro-week1 to see the current live version.
+Alternatively, visit https://jk0609.github.io/portfolio to see the current live version.
 
 ## Technologies Used
 
