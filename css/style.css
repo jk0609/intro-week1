@@ -1,0 +1,14 @@
+/*Header section*/
+#headerDiv{
+  background-color: yellow;
+}
+#introText{
+  background: red;
+  text-align: center;
+}
+#profilePic{
+  border: solid 2px none;
+  border-radius: 200px;
+  height: 150px;
+  float: right;
+}
