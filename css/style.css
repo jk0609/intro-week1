@@ -1,14 +1,43 @@
+body{
+  background: #888888;
+}
+#mainDiv{
+  width: 70%;
+  margin: auto;
+}
+
+/*Navbar*/
+.navbar{
+  background: #888888;
+  border: none;
+}
+.nav a{/*header text color wont change*/
+  color: #88BBD6;
+}
+
 /*Header section*/
 #headerDiv{
-  background-color: yellow;
+  background-color: #88BBD6;
+  margin-top: 51px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
 #introText{
-  background: red;
   text-align: center;
+  margin: 2% 0 2% 0;
 }
 #profilePic{
   border: solid 2px none;
   border-radius: 200px;
   height: 150px;
+  margin: 4% 0 4% 0;
   float: right;
+}
+
+/*Portfolio Section*/
+
+/*About Me section*/
+#aboutDiv{
+  background-color: #88BBD6;
+  text-align: center;
 }
