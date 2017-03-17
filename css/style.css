@@ -46,8 +46,18 @@ body{
   text-align: center;
   margin-bottom: 20px;
 }
+.portItem{
+  border: solid 9px #676561;
+  margin-top: 10px;
+  height: 200px;
+}
 .portItem img{
+  height: 80px;
   float: left;
+  margin:50px 10px 0px 10px;
+}
+.portItem p:nth-child(2) {
+  margin-top: 20px;
 }
 
 /*About Me section*/
