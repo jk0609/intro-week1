@@ -8,7 +8,7 @@ body{
 
 /*Navbar*/
 .navbar{
-  background: #888888;
+  background: #676561;
   border: none;
 }
 .nav a{/*header text color wont change*/
@@ -39,5 +39,13 @@ body{
 /*About Me section*/
 #aboutDiv{
   background-color: #88BBD6;
+}
+#aboutDiv h2{
   text-align: center;
+}
+#aboutDiv ul{
+  list-style-type: circle;
+}
+#aboutDiv li{
+  margin: 3px 0;
 }
