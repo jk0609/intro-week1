@@ -47,26 +47,32 @@ h2{
 
 /*Portfolio Section*/
 #portDiv{
-  margin: auto;
-  margin-bottom: 2%;
-  width: 90%;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
+  margin-bottom: 10px;
 }
-.portItem{
-  border: solid 5px #676561;
-  margin-top: 10px;
-  height: 200px;
-  padding-right: 10px;
+.portTitle h1{
+  display: inline
 }
-.portItem img{
-  height: 80px;
+.portSection{
+  display: none;
+  height: 350px;
+}
+.portSection *{
+  display: none;
+}
+.screenshot{
+  height: 375px;
   float: left;
-  margin:50px 10px 0px 10px;
+  margin-right: 20px;
 }
-.portItem p:nth-child(2) {
-  margin-top: 20px;
+.arrows{
+  display: inline-block;
+  float: right;
+  height: 40px;
 }
+.up{
+  display: none;
+}
+
 
 /*About Me section*/
 #aboutDiv{
