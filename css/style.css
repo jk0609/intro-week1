@@ -1,84 +1,68 @@
 body{
-  background: #888888;
+  background: black;
   position: relative;
-  padding-bottom: 60px;
+  padding-bottom: 50px;
+  color: #dfdfdf;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5em;
 }
-#mainDiv{
-  width: 70%;
-  margin: auto;
+body a{
+  color: white;
+  text-decoration: underline;
 }
 h2{
   text-align: center;
   margin-bottom: 20px;
   font-weight: bold;
 }
-/*span class to enlarge text*/
-.enlarge{
-  font-size: 22px;
-}
 
 /*Navbar*/
 .navbar{
-  background: #676561;
-  border: none;
-}
-.nav a{
-  color: #88BBD6;
+  background:black;
 }
 
-/*Header section*/
-#headerDiv{
-  background: #88BBD6;
-  margin-top: 51px;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
+/*Splash section*/
+#splashDiv{
+  margin-top: 50px;
+  background-image: url("../img/seattle_wp.jpg");
+  height: 700px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
 }
-#introText{
+#subSplash{
+  background: black;
+  opacity: .8;
+  float: right;
+  width: 400px;
+  height: 700px;
+  z-index: 1;
   text-align: center;
-  margin: 2% 0 2% 0;
 }
-#profilePic{
-  border: solid 2px none;
-  border-radius: 200px;
-  height: 150px;
-  margin: 4% 0 4% 0;
-  float: right;
+#subSplash h1{
+  font-size: 2.5em;
+  font-weight: 800;
+  margin-top: 60%;
 }
-
-/*Portfolio Section*/
-#portDiv{
-  margin-bottom: 10px;
-}
-.portTitle h1{
-  display: inline
-}
-.portSection{
-  display: none;
-  height: 350px;
-}
-.portSection *{
-  display: none;
-}
-.screenshot{
-  height: 375px;
-  float: left;
-  margin-right: 20px;
-}
-.arrows{
-  display: inline-block;
-  float: right;
-  height: 40px;
-}
-.up{
-  display: none;
-}
-
 
 /*About Me section*/
 #aboutDiv{
-  background: #88BBD6;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
+  background: #212121;
+  padding: 0px 90px 20px 90px;
+}
+#introText h1{
+  text-align: center;
+  font-size: 3.5em;
+  margin-top: 15%;
+}
+#profilePic{
+  border-radius: 200px;
+  height: 150px;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
 }
 #aboutDiv ul{
   list-style-type: circle;
@@ -87,15 +71,65 @@ h2{
   margin: 3px 0;
 }
 
+/*Portfolio Section*/
+#portDiv{
+  margin-bottom: 10px;
+  padding: 30px 90px 0px 90px;
+}
+.portRow{
+  margin-top: 20px;
+}
+.portEntry{
+  min-width: 650px;
+}
+.portTitle{
+  margin: 5px 0px 10px 0px;s
+}
+.portTitle h1{
+  display: inline
+}
+.portSection{
+  min-height: 300px;
+  margin-bottom: 10px;
+}
+.border{
+  height: 5px;
+  border-bottom: solid 2px white;
+}
+.screenshot{
+  height: 200px;
+  max-width: 322px;
+  float: left;
+  margin: 5% 20px 30px 0px;
+}
+.arrows{
+  display: inline;
+  float: right;
+  height: 30px;
+  margin-right: 20px;
+}
+.down{
+  display: none;
+}
+
 /*Contact Me*/
 #contactDiv{
-  margin: auto;
-  width: 90%;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
+  padding: 0px 120px 20px 120px;
+  background: #212121;
+}
+#contactDiv p{
+  font-size: 1.2em;
+}
+#contactDiv img{
+  margin-top: 20px;
+  height: 80px;
 }
 form{
   width: 90%;
+}
+form input,textarea{
+  padding-left: 15px;
+  color: black;
 }
 form *{
   margin-top: 20px;
@@ -107,18 +141,30 @@ form *{
   height: 150px;
 }
 button{
-  width: 20%;
+  width: 120px;
   font-size: 16px;
   font-weight: bold;
-  background: #88BBD6;
+  background: black;
+  color: white;
   border: none;
+  border-radius: 0px;
 }
-#contactDiv p{
-  font-size: 18px;
+#formContainer{
+  margin: auto;
+  min-width: 300px;
+  width: 50%;
 }
-#contactDiv img{
-  margin-top: 20px;
-  height: 80px;
+#formContainer form :not(button, input::placeholder) {
+  text-align: center;
+}
+#formContainer img {
+  text-align: center;
+}
+#socialDiv {
+  text-align: center;
+}
+#socialDiv a {
+  margin: 0px 5px 0px 5px;
 }
 
 /*Footer*/
