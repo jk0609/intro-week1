@@ -24,7 +24,8 @@ h2{
 /*Splash section*/
 #splashDiv{
   margin-top: 50px;
-  background-image: url("../img/seattle_wp.jpg");
+  /*background-image: url("../img/seattle_wp.jpg");*/
+  background-image: url("http://i.imgur.com/PYcBJOo.jpg");
   height: 700px;
   background-attachment: fixed;
   background-position: center;
@@ -33,6 +34,7 @@ h2{
   z-index: -1;
 }
 #subSplash{
+  display: none;
   background: black;
   opacity: .8;
   float: right;
@@ -45,6 +47,10 @@ h2{
   font-size: 2.5em;
   font-weight: 800;
   margin-top: 60%;
+  display: none;
+}
+#subSplash h4{
+  display: none;
 }
 
 /*About Me section*/
@@ -74,7 +80,9 @@ h2{
 /*Portfolio Section*/
 #portDiv{
   margin-bottom: 10px;
+  min-height: 800px; /*test*/
   padding: 30px 90px 0px 90px;
+  position: relative;
 }
 .portRow{
   margin-top: 20px;
@@ -177,4 +185,18 @@ footer{
   height: 50px;
   text-align: center;
   padding-top: 17px;
+}
+
+
+
+.portBox{
+  height: 200px;
+  background: grey;
+  border-radius: 20px;
+  margin: 15px;
+}
+.clicked{
+  top: 30;
+  left: 75;
+  position: absolute;
 }

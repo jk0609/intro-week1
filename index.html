@@ -4,7 +4,8 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <link rel='stylesheet' href='css/bootstrap.css'>
   <link rel='stylesheet' href='css/style.css'>
-  <script src='js/jquery-3.2.0.js'></script>
+  <script src='js/jquery-3.2.1.js'></script>
+  <script src='js/jquery-ui.js'></script>
   <script src='js/scripts.js'></script>
   <title>Jonathon Kang's Portfolio</title>
 </head>
@@ -13,9 +14,9 @@
   <nav class="navbar navbar-fixed-top">
     <div class="container-fluid">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#aboutDiv">About Me</a></li>
-        <li><a href="#portDiv">Portfolio</a></li>
-        <li><a href="#contactDiv">Contact Me</a></li>
+        <li><a value='aboutDiv' onclick='return false;'>About Me</a></li>
+        <li><a value='portDiv' onclick='return false;'>Portfolio</a></li>
+        <li><a value='contactDiv' onclick='return false;'>Contact Me</a></li>
       </ul>
     </div>
   </nav>
@@ -23,9 +24,11 @@
   <!-- Splash section -->
   <div class='container-fluid' id='splashDiv'>
     <div id='subSplash'>
-      <h1>Jonathon Kang</h1>
-      <br>
-      <h4><em>Freelance web developer and technology enthusiast</em></h4>
+      <div>
+        <h1>Jonathon Kang</h1>
+        <br>
+        <h4><em>Freelance web developer and technology enthusiast</em></h4>
+      </div>
     </div>
   </div>
 
@@ -79,7 +82,32 @@
 
     <!--Portfolio Secion-->
   <div class='container-fluid' id='portDiv'>
-    <div class='row portRow'>
+    <div class='row'>
+      <div class='portBox col-sm-3' id='port1'>
+
+      </div>
+      <div class='portBox col-sm-3'>
+
+      </div>
+      <div class='portBox col-sm-3'>
+
+      </div>
+      <div class='portBox col-sm-3'>
+
+      </div>
+      <div class='portBox col-sm-3'>
+
+      </div>
+      <div class='portBox col-sm-3'>
+
+      </div>
+      <div class='portBox col-sm-3'>
+
+      </div>
+    </div>
+
+
+    <!-- <div class='row portRow'>
       <div class='col-md-6 portEntry'>
         <div class='portTitle'>
           <h1>Dominion</h1>
@@ -96,7 +124,7 @@
           </div>
         </div>
         <div class='border' value='1'></div>
-      </div><!--project 1-->
+      </div>
       <div class='col-md-6 portEntry'>
         <div class='portTitle'>
           <h1>Twitch Favorites List</h1>
@@ -114,7 +142,7 @@
           </div>
         </div>
         <div class='border' value='1'></div>
-      </div><!--project 2-->
+      </div>
     </div>
     <div class='row portRow'>
       <div class='col-md-6 portEntry'>
@@ -134,7 +162,7 @@
           </div>
         </div>
         <div class='border' value='1'></div>
-      </div><!--project 3-->
+      </div>
       <div class='col-md-6 portEntry'>
         <div class='portTitle'>
           <h1>Coming Soon</h1>
@@ -151,8 +179,8 @@
           </div>
         </div>
         <div class='border' value='1'></div>
-      </div><!--project 4-->
-    </div>
+      </div>
+    </div> -->
   </div><!--portDiv-->
 
   <!--Contact Me Section-->
