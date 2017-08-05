@@ -81,7 +81,7 @@ h2{
 #portDiv{
   margin-bottom: 10px;
   min-height: 800px; /*test*/
-  padding: 30px 90px 0px 90px;
+  /*padding: 30px 90px 0px 90px;*/
   position: relative;
 }
 .portRow{
@@ -194,9 +194,10 @@ footer{
   background: grey;
   border-radius: 20px;
   margin: 15px;
+  width: 250px;
+  display: inline-block;
 }
 .clicked{
-  top: 30;
-  left: 75;
   position: absolute;
+  background: red;
 }

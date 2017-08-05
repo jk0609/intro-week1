@@ -9,39 +9,42 @@ $(document).ready(function(){
   $('#subSplash').fadeIn(1500);
   $('#subSplash h1,h4').delay(1300).animate({width:'toggle'},1000);
 
+  var clicked = false;
   $('.portBox').click(function(){
-    // $('#port1').animate({left:400}, {
-    //   duration: 2000,
-    //   complete: function(){
-    //     alert('test')
-    //   }
-    // })
+
       var corner = $('#port1').position()
       var destSide = corner['left']-$(this).position()['left']
       var destTop = corner['top']-$(this).position()['top']
+      console.log(destSide, destTop)
 
-      if (!$(this).data('animated')){
-        if(!$(this).data('clicked')){
-          $(this).data('animated', true)
-          $(this).data('clicked', true)
-          $('.portBox').not(this).fadeTo(400,0);
-          $(this).animate({left: destSide, top: destTop}, {
-            duration: 1000,
-            complete: function(){
-              $(this).data('animated', false);
-            }
-          })
+      if (!$(this).is(':animated')){
+        // if(!$(this).data('clicked')){
+        if(!clicked){
+          var port = $(this)
+          $('.portBox').not(this).fadeTo(200,0,function(){
+            port.addClass('clicked')
+            port.stop().animate({left: 50, top: 50}, {
+              // duration: 400,
+              complete: function(){
+                // $(this).data('clicked', true)
+
+                port.animate({height: (port.parent().height()*.8), width: (port.parent().width()*.8)})
+                clicked = true;
+              }
+            })
+          });
         }
         else{
-          $(this).data('animated', true)
-          $(this).data('clicked', false)
+
           $(this).animate({left: -destSide, top: -destTop}, {
-            duration: 1000,
+            duration: 400,
             complete: function(){
-              $(this).data('animated', false);
+              $('.portBox').not(this).fadeTo(200,1);
+              // $(this).data('clicked', false)
+              clicked = false;
             }
           })
-          $('.portBox').not(this).delay(1000).fadeTo(400,1);
+
         }
       }
   })
